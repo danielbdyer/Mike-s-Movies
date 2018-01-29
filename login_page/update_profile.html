@@ -1,0 +1,46 @@
+
+<html>
+<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+<div class="login-background">
+<div class="login-container">
+  <input id="txtFirstName" type="text" placeholder="First Name" class="txtBox">
+
+  <input id="txtLastName" type="text" placeholder="Last Name" class="txtBox">
+
+  <input id="txtPhoneNumber" type="phone" placeholder="Phone number" class="txtBox">
+
+  <input id="txtAddress" type="address" placeholder="Address" class="txtBox">
+
+<div class="btns-container">
+    <button id="btnUpdateProfile" class=" btn btn-secondary">
+        Update Profile
+    </button>
+
+</div>
+</div>
+</div>
+
+</body>
+
+<<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyC4xJczHrcejbkI0VeKFnBVpeUkq6E_YFk",
+    authDomain: "mikesmovies-c3799.firebaseapp.com",
+    databaseURL: "https://mikesmovies-c3799.firebaseio.com",
+    projectId: "mikesmovies-c3799",
+    storageBucket: "mikesmovies-c3799.appspot.com",
+    messagingSenderId: "840246158041"
+  };
+  firebase.initializeApp(config);
+</script>
+<!-- <script src="user_login.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="userList.js"></script>
+<script src="update_profile.js"></script>
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css"
+  },
+  "keywords": [
+    "Mike's",
+    "Movies"
+  ],
+  "author": "Jonathan Shumate",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.7.2"
+  },
+  "dependencies": {
+    "fast-crc32c": "^1.0.4",
+    "firebase-admin": "^5.6.0",
+    "hash-stream-validation": "^0.2.1"
+  }
+}

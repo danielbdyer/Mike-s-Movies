@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">        
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+    
+    <div class="navigation">
+        <input type="checkbox" class="navigation_checkbox" id="navi-toggle">
+        <label for="navi-toggle" class="navigation_button">
+                <span class="navigation_icon">&nbsp;</span>
+            </label>
+        <div class="navigation_background">
+            &nbsp;
+        </div>
+            <nav class="navigation_nav">
+                <ul class="navigation_list">
+                    <li class="navigation_item"><a href="#" class="navigation_link">About Page</a></li>
+                    <li class="navigation_item"><a href="#" class="navigation_link">Help</a></li>
+                    <li class="navigation_item"><a href="#" class="navigation_link">Admin</a></li>
+                </ul>
+            </nav>
+    </div>
+<div class="login-background">
+  <div class="login-container">
+    <form id="signupForm">
+        <input id="txtEmail" type="email" placeholder="email" class="txtBox">
+        <input id="txtPassword" type="password" placeholder="Password" class="txtBox">
+        <button id="btnSignup" class=" btn shrink">
+          Sign Up
+        </button>
+      </form>
+      <div class="btns-container">
+        <button id="btnGoogleLogin" class = "btn shrink">
+            Sign Up With Google
+        </button>
+  </div>
+</div>
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+<script src="user_signup.js"></script>
+</html>

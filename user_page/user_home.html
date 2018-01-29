@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<!--<link rel="stylesheet" href="../css/main.css" type="text/css">-->
+<link rel="stylesheet" href="../css/mainpage.css" type="text/css">
+<title>Request a Movie!</title>
+<!--if lt IE 9script(src='//html5shim.googlecode.com/svn/trunk/html5.js')
+-->
+</head>
+<body>
+<div id="main-container">
+  <div id="logo">Plex On Request!</div>
+<div id="navigation-container">
+    <form id="live-search" action="" class="styled" method="post">
+      <fieldset>
+        <input type="text" class="text-input" id="filter" value="" placeholder="search for a movie" data-type="search"/>
+      </fieldset>
+    </form>
+</div><div class="logout">
+<button id="btnLogout" class = "btn btn-action">
+        Logout
+</button>
+</div>
+</div>
+
+<div id="body-container">
+  <div id="resultscontainer">
+    <div id="usersplash">
+      <div id="movie-choice-container"></div>
+      <div id="wishlist-container"></div>
+    </div>
+    <div id="slidercontent"></div>
+    <!--<div id="processing"><img src="Preloader_21.gif"/></div>-->
+  </div>
+</div>
+
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/bundle.js"></script>
+<script src="js/user_home.js"></script>
+<script src="js/main.js"></script>
+</html>

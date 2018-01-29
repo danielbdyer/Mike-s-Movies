@@ -1,0 +1,307 @@
+div#main-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+div#navigation-container,
+div#logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+form#live-search {
+  width: 250px;
+}
+
+input#filter::-webkit-search-cancel-button{
+    position:relative;
+    right:20px;
+}
+
+div#body-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+div#resultscontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+#slidercontent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 98%;
+  margin: auto;
+  height: 500px;
+  color: white;
+  font-size: 24pt;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+div.detailedlook {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  max-width: 90%;
+}
+
+div#detailedinfo {
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+  background: radial-gradient(#e3e3e3, #d3d3d3);
+  -webkit-box-shadow: 0px 8px 10px gray,
+      -10px 8px 15px gray, 10px 8px 15px gray;
+          box-shadow: 0px 8px 10px gray,
+      -10px 8px 15px gray, 10px 8px 15px gray;
+}
+
+@media (min-width: 0px) and (max-width: 720px) {
+  div#detailedposter { display: none; }
+  div#slidercontent { height: 300px; }
+}
+
+@media (min-width: 721px) {
+  div#detailedposter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  -webkit-box-flex: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  height: 470px;
+  margin-top: 16px;
+}
+
+div#detailedposter img {
+  height: 470px;
+  max-width: 350px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  border-right: 1px solid gray;
+}
+
+div#slidercontent { height: 500px; }
+
+}
+
+div.movies {
+  margin: 0px 10px 30px 10px;
+  max-width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+div.poster {
+  -ms-flex-item-align: center;
+  align-self: center;
+  width: 300px;
+  height: 450px;
+}
+
+div#detailedinfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: vertical;
+  flex-direction: vertical;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+div.movietitle {
+  font-size: 2rem;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  font-weight: 900;
+  text-shadow:
+ -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+   1px 1px 0 #000;
+}
+
+div.moviesubinfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: horizontal;
+  flex-direction: horizontal;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: 15px;
+  font-size: 1.1rem;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+div.movieyear,
+div.movierated,
+div.movieruntime {
+  margin-right: 5px;
+}
+
+div.moviegenre {
+  margin-left: 30px;
+}
+
+div.moviedescription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 80%;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  margin: auto;
+  font-size: 1.3rem;
+  text-align: left;
+}
+
+div.movieawards {
+  font-size: 1rem;
+  margin-left: 15px;
+}
+
+div.poster img {
+  height: 100%;
+  width: 100%;
+}
+
+div.movierated {
+  border-style: 1px inset lightgray;
+}
+
+div#selectbuttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: horizontal;
+  flex-direction: horizontal;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -ms-flex-item-align:end;
+      align-self:flex-end;
+  width: 300px;
+}
+
+input.interested, input.userinterest {
+  width: 115px;
+  padding: 10px;
+  text-align: center;
+}
+
+input.requested {
+  background-color: none;
+}
