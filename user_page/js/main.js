@@ -41,7 +41,7 @@ firebase.auth().onAuthStateChanged(function(user) {
         title.movies = movies;
         // console.log(title.movies)
         let movieINFO =
-          "http://www.omdbapi.com/?i=" + title.movies + "&apikey=d1da1b5c";
+          "https://www.omdbapi.com/?i=" + title.movies + "&apikey=d1da1b5c";
         // console.log(movieINFO)
 
         $.get(movieINFO, function(info) {
@@ -112,7 +112,7 @@ firebase.auth().onAuthStateChanged(function(user) {
         title.movies = movies;
         console.log(title.movies);
         let movieINFO =
-          "http://www.omdbapi.com/?i=" + title.movies + "&apikey=d1da1b5c";
+          "https://www.omdbapi.com/?i=" + title.movies + "&apikey=d1da1b5c";
         // console.log(movieINFO)
 
         $.get(movieINFO, function(info) {
@@ -240,7 +240,7 @@ firebase.auth().onAuthStateChanged(function(user) {
     }
 
     function queryAPI(apiquery) {
-      const url = "http://www.omdbapi.com/?s=" + apiquery + "&apikey=" + apikey;
+      const url = "https://www.omdbapi.com/?s=" + apiquery + "&apikey=" + apikey;
       $.get(url, function(data) {
         let results = data.Search;
         if (typeof results !== "undefined") {
